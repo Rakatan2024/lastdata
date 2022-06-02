@@ -17,7 +17,7 @@ exports.add_star = (req, res) =>{
 }
 
 exports.update_star = (req, res) =>{
-    axios.get('https://evening-retreat-93314.herokuapp.com/api/stars', { params : { id : req.query.id }})
+    axios.get('https://evening-retreat-93314.herokuapp.com/newstar/api/stars', { params : { id : req.query.id }})
         .then(function(stardata){
             res.render("update_star", { star : stardata.data})
         })
