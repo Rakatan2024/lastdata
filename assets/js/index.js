@@ -17,7 +17,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `https://boiling-island-12959.herokuapp.com/admin/api/users/${data.id}`,
+        "url" : `https://evening-retreat-93314.herokuapp.com/admin/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -44,7 +44,7 @@ $("#update_star").submit(function(event){
 
 
     var request = {
-        "url" : `https://boiling-island-12959.herokuapp.com/star/api/stars/${data.id}`,
+        "url" : `https://evening-retreat-93314.herokuapp.com/star/api/stars/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -60,7 +60,7 @@ if(window.location.pathname === "/star"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `https://boiling-island-12959.herokuapp.com/star/api/stars/${id}`,
+            "url" : `https://evening-retreat-93314.herokuapp.com/star/api/stars/${id}`,
             "method" : "DELETE"
         }
 
@@ -79,7 +79,7 @@ if(window.location.pathname === "/newstar"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `https://boiling-island-12959.herokuapp.com/newstar/api/stars/${id}`,
+            "url" : `https://evening-retreat-93314.herokuapp.com/newstar/api/stars/${id}`,
             "method" : "DELETE"
         }
 
@@ -97,7 +97,7 @@ if(window.location.pathname === "/admin"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `https://boiling-island-12959.herokuapp.com/admin/api/users/${id}`,
+            "url" : `https://evening-retreat-93314.herokuapp.com/admin/api/users/${id}`,
             "method" : "DELETE"
         }
 
